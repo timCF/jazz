@@ -2,7 +2,7 @@
 #                  Version 2, December 2004
 #
 #          DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-# TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+# TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 #
 # 0. You just DO WHAT THE FUCK YOU WANT TO.
 
@@ -31,7 +31,7 @@ end
 defmodule Jazz.Pretty do
   defmacro __using__(_opts) do
     quote do
-      @compile { :inline, offset: 1, offset: 2, indentation: 1, spaces: 1 }
+      #@compile { :inline, offset: 1, offset: 2, indentation: 1, spaces: 1 }
 
       defp offset(options) do
         Keyword.get(options, :offset, 0)
